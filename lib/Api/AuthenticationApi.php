@@ -413,6 +413,7 @@ class AuthenticationApi
      * @param  string $client_id Enter the API Key here (optional)
      * @param  string $client_secret Enter the API Secret here (optional)
      * @param  string $grant_type grant_type (optional)
+     * @param  string $code This is the code given to you at time of Authentication (optional)
      * @param  string $refresh_token This is the refresh token given to you at time of Authentication (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['oauth2V1AuthorizePost'] to see the possible values for this operation
      *
@@ -420,9 +421,9 @@ class AuthenticationApi
      * @throws \InvalidArgumentException
      * @return void
      */
-    public function oauth2V1AuthorizePost($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
+    public function oauth2V1AuthorizePost($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $code = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
     {
-        $this->oauth2V1AuthorizePostWithHttpInfo($content_type, $client_id, $client_secret, $grant_type, $refresh_token, $contentType);
+        $this->oauth2V1AuthorizePostWithHttpInfo($content_type, $client_id, $client_secret, $grant_type, $code, $refresh_token, $contentType);
     }
 
     /**
@@ -434,6 +435,7 @@ class AuthenticationApi
      * @param  string $client_id Enter the API Key here (optional)
      * @param  string $client_secret Enter the API Secret here (optional)
      * @param  string $grant_type (optional)
+     * @param  string $code This is the code given to you at time of Authentication (optional)
      * @param  string $refresh_token This is the refresh token given to you at time of Authentication (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['oauth2V1AuthorizePost'] to see the possible values for this operation
      *
@@ -441,9 +443,9 @@ class AuthenticationApi
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function oauth2V1AuthorizePostWithHttpInfo($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
+    public function oauth2V1AuthorizePostWithHttpInfo($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $code = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
     {
-        $request = $this->oauth2V1AuthorizePostRequest($content_type, $client_id, $client_secret, $grant_type, $refresh_token, $contentType);
+        $request = $this->oauth2V1AuthorizePostRequest($content_type, $client_id, $client_secret, $grant_type, $code, $refresh_token, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -498,15 +500,16 @@ class AuthenticationApi
      * @param  string $client_id Enter the API Key here (optional)
      * @param  string $client_secret Enter the API Secret here (optional)
      * @param  string $grant_type (optional)
+     * @param  string $code This is the code given to you at time of Authentication (optional)
      * @param  string $refresh_token This is the refresh token given to you at time of Authentication (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['oauth2V1AuthorizePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function oauth2V1AuthorizePostAsync($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
+    public function oauth2V1AuthorizePostAsync($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $code = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
     {
-        return $this->oauth2V1AuthorizePostAsyncWithHttpInfo($content_type, $client_id, $client_secret, $grant_type, $refresh_token, $contentType)
+        return $this->oauth2V1AuthorizePostAsyncWithHttpInfo($content_type, $client_id, $client_secret, $grant_type, $code, $refresh_token, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -523,16 +526,17 @@ class AuthenticationApi
      * @param  string $client_id Enter the API Key here (optional)
      * @param  string $client_secret Enter the API Secret here (optional)
      * @param  string $grant_type (optional)
+     * @param  string $code This is the code given to you at time of Authentication (optional)
      * @param  string $refresh_token This is the refresh token given to you at time of Authentication (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['oauth2V1AuthorizePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function oauth2V1AuthorizePostAsyncWithHttpInfo($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
+    public function oauth2V1AuthorizePostAsyncWithHttpInfo($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $code = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
     {
         $returnType = '';
-        $request = $this->oauth2V1AuthorizePostRequest($content_type, $client_id, $client_secret, $grant_type, $refresh_token, $contentType);
+        $request = $this->oauth2V1AuthorizePostRequest($content_type, $client_id, $client_secret, $grant_type, $code, $refresh_token, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -564,13 +568,14 @@ class AuthenticationApi
      * @param  string $client_id Enter the API Key here (optional)
      * @param  string $client_secret Enter the API Secret here (optional)
      * @param  string $grant_type (optional)
+     * @param  string $code This is the code that was returned as a query parameter after the user authorized your app (optional)
      * @param  string $refresh_token This is the refresh token given to you at time of Authentication (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['oauth2V1AuthorizePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function oauth2V1AuthorizePostRequest($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
+    public function oauth2V1AuthorizePostRequest($content_type = null, $client_id = null, $client_secret = null, $grant_type = null, $code = null, $refresh_token = null, string $contentType = self::contentTypes['oauth2V1AuthorizePost'][0])
     {
 
 
@@ -604,6 +609,9 @@ class AuthenticationApi
         // form params
         if ($grant_type !== null) {
             $formParams['grant_type'] = ObjectSerializer::toFormValue($grant_type);
+        }
+        if ($code !== null) {
+            $formParams['code'] = ObjectSerializer::toFormValue($code);
         }
         // form params
         if ($refresh_token !== null) {
