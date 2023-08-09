@@ -35,5 +35,7 @@
     },
     "autoload-dev": {
         "psr-4": { "Webfox\\MYOB\\Client\\Test\\" : "test/" }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
