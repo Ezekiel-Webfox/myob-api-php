@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Webfox\MYOB\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Webfox\MYOB\Client\ApiException;
+use Webfox\MYOB\Client\Configuration;
+use Webfox\MYOB\Client\HeaderSelector;
+use Webfox\MYOB\Client\ObjectSerializer;
 
 /**
  * SalesInvoicesSaleInvoicesMiscellaneousApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -144,7 +144,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $content_type content_type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdPurchaseBillMiscellaneousGuidDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -166,7 +166,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $content_type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdPurchaseBillMiscellaneousGuidDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -434,7 +434,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $body body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdPurchaseBillMiscellaneousGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -457,7 +457,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdPurchaseBillMiscellaneousGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -733,7 +733,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $accept_encoding accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdSaleInvoiceMiscellaneousGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -754,7 +754,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdSaleInvoiceMiscellaneousGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1048,7 +1048,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $body body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdSaleInvoiceMiscellaneousPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1071,7 +1071,7 @@ class SalesInvoicesSaleInvoicesMiscellaneousApi
      * @param  string $body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdSaleInvoiceMiscellaneousPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

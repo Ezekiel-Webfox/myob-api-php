@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Webfox\MYOB\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Webfox\MYOB\Client\ApiException;
+use Webfox\MYOB\Client\Configuration;
+use Webfox\MYOB\Client\HeaderSelector;
+use Webfox\MYOB\Client\ObjectSerializer;
 
 /**
  * GeneralLedgerAccountsAccountBudgetsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -160,7 +160,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $accept_encoding accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountBudgetGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -181,7 +181,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountBudgetGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -476,7 +476,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountBudgetGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -500,7 +500,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountBudgetGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -829,7 +829,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $x_myobapi_key The API key registered in https://my.myob.com.au/au/bd/DevAppList.aspx (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -850,7 +850,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $x_myobapi_key The API key registered in https://my.myob.com.au/au/bd/DevAppList.aspx (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1144,7 +1144,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $content_type content_type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountGuidDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1167,7 +1167,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $content_type (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountGuidDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1488,7 +1488,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1512,7 +1512,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1843,7 +1843,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1866,7 +1866,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2177,7 +2177,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $accept_encoding accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountRegisterGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2198,7 +2198,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountRegisterGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2490,7 +2490,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $accept_encoding accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountingPropertiesGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2511,7 +2511,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerAccountingPropertiesGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2803,7 +2803,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $x_myobapi_key The API key registered in https://my.myob.com.au/au/bd/DevAppList.aspx (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerLinkedAccountGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2824,7 +2824,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $x_myobapi_key The API key registered in https://my.myob.com.au/au/bd/DevAppList.aspx (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerLinkedAccountGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3119,7 +3119,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerLinkedAccountGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3143,7 +3143,7 @@ class GeneralLedgerAccountsAccountBudgetsApi
      * @param  string $body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdGeneralLedgerLinkedAccountGuidPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

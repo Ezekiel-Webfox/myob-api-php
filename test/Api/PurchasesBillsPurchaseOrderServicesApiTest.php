@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,18 +25,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Client\Test\Api;
+namespace Webfox\MYOB\Client\Test\Api;
 
-use \OpenAPI\Client\Configuration;
-use \OpenAPI\Client\ApiException;
-use \OpenAPI\Client\ObjectSerializer;
+use \Webfox\MYOB\Client\Configuration;
+use \Webfox\MYOB\Client\ApiException;
+use \Webfox\MYOB\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * PurchasesBillsPurchaseOrderServicesApiTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Webfox\MYOB\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Webfox\MYOB\Client\ApiException;
+use Webfox\MYOB\Client\Configuration;
+use Webfox\MYOB\Client\HeaderSelector;
+use Webfox\MYOB\Client\ObjectSerializer;
 
 /**
  * ReportsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Webfox\MYOB\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -148,7 +148,7 @@ class ReportsApi
      * @param  string $accept_encoding accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportGSTNZGSTReportGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -168,7 +168,7 @@ class ReportsApi
      * @param  string $accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportGSTNZGSTReportGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -411,7 +411,7 @@ class ReportsApi
      * @param  string $year_end_adjust yearEndAdjust must be either true or false (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportPayrollCategorySummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -436,7 +436,7 @@ class ReportsApi
      * @param  string $year_end_adjust yearEndAdjust must be either true or false (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportPayrollCategorySummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -780,7 +780,7 @@ class ReportsApi
      * @param  string $accept_encoding accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportPayrollEmployeePayrollAdviceGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -801,7 +801,7 @@ class ReportsApi
      * @param  string $accept_encoding (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportPayrollEmployeePayrollAdviceGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1097,7 +1097,7 @@ class ReportsApi
      * @param  string $year_end_adjust yearEndAdjust must be either true or false (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportProfitAndLossSummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1122,7 +1122,7 @@ class ReportsApi
      * @param  string $year_end_adjust yearEndAdjust must be either true or false (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportProfitAndLossSummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1470,7 +1470,7 @@ class ReportsApi
      * @param  string $year_end_adjust yearEndAdjust must be either true or false (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportTaxCodeSummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1495,7 +1495,7 @@ class ReportsApi
      * @param  string $year_end_adjust yearEndAdjust must be either true or false (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportTaxCodeSummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1840,7 +1840,7 @@ class ReportsApi
      * @param  string $filter {{mm}} is the month like 02 or 11 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportTransactionCodingSummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1862,7 +1862,7 @@ class ReportsApi
      * @param  string $filter {{mm}} is the month like 02 or 11 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['companyFileIdReportTransactionCodingSummaryGet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Webfox\MYOB\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
